@@ -19,17 +19,6 @@ export function Map() {
       zoom: zoom,
     });
 
-      map.current.on('load', () => {
-        map.current.addSource('my-verctor-source', {
-          type: 'vector',
-          tiles: [
-             'https://d25uarhxywzl1j.cloudfront.net/v0.1/{z}/{x}/{y}.mvt'
-          ],
-          minzoom: 6,
-          maxzoom: 14,
-        });
-        
-      })
 
     map.current.addControl(new maplibregl.NavigationControl(), 'top-right');
   }, []);
