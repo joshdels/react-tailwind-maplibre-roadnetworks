@@ -29,3 +29,44 @@ html, body, #root {
   width: 100%;
   height: 100%;
 }
+
+
+
+
+
+/* remove default white chrome if you want full control */
+.custom-school-popup {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* the element that wraps your HTML */
+.custom-school-popup .maplibregl-popup-content {
+  padding: 0 !important;            /* let your inner element control padding */
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* style the close button (x) */
+.custom-school-popup .maplibregl-popup-close-button {
+  position: flex;               /* absolute so we can place it */
+  top: 6px;                         /* adjust vertical position */
+  right: 2px;                     
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 9999px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #333333;
+}
+
+/* optional: hide default tip/triangle */
+.custom-school-popup .maplibregl-popup-tip {
+  display: none !important;
+}
+
