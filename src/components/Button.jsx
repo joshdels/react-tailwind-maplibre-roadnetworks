@@ -1,11 +1,11 @@
 export function Button({ name, icon: Icon, x , y }) {
   return (
-    <div className="absolute z-50" style={{ left: x, top: y }}>
+    <div className="absolute z-50" style={{ left: x, top: y="10%" }}>
       <button
         className="
-          flex items-center gap-2        /* ⬅ Adds space between icon & text */
+          flex items-center gap-2     
           px-4 py-2 
-          text-sm font-medium 
+          text-medium font-medium 
           text-gray-700 
           bg-white 
           rounded-full 
